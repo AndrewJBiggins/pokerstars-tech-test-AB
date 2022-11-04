@@ -13,4 +13,4 @@ Create a simple javascript framework using WebdriverIO and Cucumber to automate 
 - https://webdriver.io/docs/gettingstarted
 - https://webdriver.io/docs/frameworks#using-cucumber
 
-After completing the tasks, please update the README.md file with your scenarios from Task 1 and instructions on how to run your tests, include any information you think is relevant, interesting or useful. The preferred delivery method for this project is via Github but we will also accept a zipped file sent as an email attachment..
+After completing the tasks, please update the README.md file with your scenarios from Task 1 and instructions on how to run your tests, include any information you think is relevant, interesting or useful. The preferred delivery method for this project is via Github but we will also accept a zipped file sent as an email attachment.
