@@ -1,8 +1,3 @@
-# part 1
-# these Scenarios are best view able in the following feature files
-# highlights.feature
-# results.feature
-
 Feature: Homepage functionality
     In order to consider making bets on upcoming sporting events
     as a sportsbook user
@@ -16,6 +11,7 @@ Feature: Homepage functionality
         When I login with an invalid account
         Then I should see a message stating the login attempt was unsuccessful
 
+    @ignore
     Scenario: Exanding the navigation menu
         When I click the expanded navigation button
         Then I should see navigation menu with additonal sport options
@@ -47,44 +43,15 @@ Feature: Homepage functionality
         Then I am on the "results" page
         And the radio button for today is selected
 
+    #would use regex to see first that the odd type matched a fraction, then that the same odd as a decimal
+    @ignore
     Scenario: Changing the type of Odds
         Given I am viewing the fractional odd type
         When I change my odd type to "Decimal"
         Then the odds on the page now show as decimal
 
+    #would likley try to read the getHomeContent API that is populating the screen, but without the API documentation im not 100% on how to use it.
+    @ignore
     Scenario: Viewing the upcoming football results
-    When I scroll down to the football section
-    Then I can see the upcoming Football events
-
-Feature: Results functionality
-    In order to se the results of recent and upcoming events
-    as a sportsbook user
-    I want to be to navigate resent and upcoming events for different sports
-
-  Background: Navigate to results page
-    Given I am on the homepage
-    And I click "results" on the sub navigation menu
-
-
-  Scenario Outline: select results by date
-    When I use the date picker to select "<day>", "<month>" and "<year>"
-    Then I am on the results page for that "<day>", "<month>" and "<year>"
-    Examples:
-      | day  | month     | year |
-      | 2022 | September | 13   |
-
-  Scenario Outline: select results by category
-    When I select "<category>" in the sports drop down menu
-    Then I am on the results page for "<sport>"
-    Examples:
-      | category | sport   |
-      | Tennis   | tennis  |
-      | Snooker  | snooker |
-
-------------------------------------------------------------------------------------
-
-# Part 2
-# Please run the following commands to run the tests
-# npm install
-# npm run test
-# thanks
+        When I scroll down to the football section
+        Then I can see the upcoming Football events
