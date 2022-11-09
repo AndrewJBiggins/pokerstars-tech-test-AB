@@ -1,9 +1,9 @@
 # part 1
 These Scenarios are best viewable in the following feature files
 
-highlights.feature
+features/homepage/highlights.feature
 
-results.feature
+features/homepage/results.feature
 
     Feature: Homepage functionality
     In order to consider making bets on upcoming sporting events
